@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Portal</title>
+        <style>
+            .head{
+                height: 100px;
+                display: flex;
+                gap: 50%;
+            }
+            .head1{
+                width: 1520px;
+                height: 100px;
+                display: flex;
+                color: #003060;
+                flex-direction: row;
+            }
+            .head2{
+                width: 250px;
+                height: 30px;
+                position: relative;
+                display: inline-block;
+            }
+            #contact{
+                width: 40px;
+                height: 50px;
+                margin: 20px;
+                border-radius: 25px;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                padding: 12px 16px;
+                z-index: 1;
+            }
+            .head2:hover .dropdowncontent {
+                display: block;
+            }
+
+            .mid{
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .box{
+                width: 350px;
+                height: 400px;
+                color: #003060;
+                border-radius: 25px;
+                padding: 40px 0px 0px 40px;
+                background-color: #d3d5d6;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form method="post" action="/studentportal">
+                <div class="head">
+                    <div class="head1">
+                        <img src="https://cdn.vectorstock.com/i/1000x1000/69/59/university-symbol-vector-2896959.webp">
+                        <h1>APPLE UNIVERSITY</h1>
+                    </div>
+                    <div class="head2">
+                        <label for="contact">
+                            <img id="contact" src="https://w7.pngwing.com/pngs/811/233/png-transparent-computer-icons-user-login-desktop-others-blue-computer-prints-thumbnail.png">
+                        </label>
+                            <select name="contact" id="contact">
+                                <option value="logout">Logout</option>
+                            </select>
+                    </div>
+                    
+                </div><hr>
+                <!-- <h1>Welcome <%= studentsData && studentsData.length > 0 ? studentsData[0].fname : ''  %></h1>
+                <% if (studentsData && studentsData.length > 0) { %>
+                    <div>
+                        <ul>
+                            <% studentsData.forEach(function(student) { %>
+                                <li>
+                                    <strong>Name:</strong> <%= student.fname %> <%= student.mname %> <%= student.lname %><br>
+                                    <strong>Email:</strong> <%= student.mail %><br>
+                                    <strong>Course:</strong> <%= student.course %><br>
+                                    <strong>Branch:</strong> <%= student.branch %><br>
+                                    <strong>section:</strong> <%= student.sec %><br>
+                                    <strong>Year of joining:</strong> <%= student.yearj %><br>
+                                    <strong>Year of Graduation:</strong> <%= student.yearg %><br>
+                                    <strong>Phone Number:</strong> <%= student.phone %><br>
+                                    <strong>Aadhar Number:</strong> <%= student.aadhar %><br>
+                                    <strong>Door Number:</strong> <%= student.door %><br>
+                                    <strong>Street:</strong> <%= student.street %><br>
+                                    <strong>District:</strong> <%= student.district %><br>
+                                    <strong>State:</strong> <%= student.state %><br>
+                                </li>
+                            <% }); %>
+                        </ul>
+                    </div>
+                <% } %> -->
+                <h2 style="color: #003060">WELCOME SREE...</h2>
+                <div class="mid">
+                    <div class="box">
+                        <h3>Student Details</h3>
+                        <p>Name: Sree</p>
+                        <p>Email: sree@gmail.com</p>
+                        <p>Registartion Number: </p>
+                        <p>Course: B.Tech</p>
+                        <p>Branch: IT</p>
+                        <p>Section: C</p>
+                        <p>Year of Joining: 2022</p>
+                        <p>Year of Graduation: 2026</p>
+                    </div>
+                    <div class="box">
+                        <h3>Identities</h3>
+                        <p>Phone Number: 2345678432</p>
+                        <p>Aadhar Number: 209876101579</p>
+                    </div>
+                    <div class="box">
+                        <h3>Address</h3>
+                        <p>Door Number: 45</p>
+                        <p>Street: George Street</p>
+                        <p>District: Krishna</p>
+                        <p>State: Andhara Pradesh</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </body>
+    <script>
+        document.getElementById('contact').addEventListener('click',function(){
+            window.location.href='home.html';
+        });
+
+    </script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Login Page</title>
+        <style>
+            .container{
+                width: 1500px;
+                height: 690px;
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+            }
+            img{
+                height: 500px;
+                width: 600px;
+            }
+
+            .column {
+                float: left;
+                padding: 10px;
+                height: 300px; 
+            }
+
+            .login {
+                height: 400px;
+                width: 300px;
+                padding: 40px 0px 0px 40px;
+                border-radius: 25px;
+                color: black;
+                margin-top: -200px;
+                margin-left: 800px;
+                background-color: #d3d5d6;
+            }
+                /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            img{
+                height: 670px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class=" column image">
+                <img src="https://img.freepik.com/premium-vector/sharing-search-business-ideas-finding-creative-solutions-tasks-office-workers-share-ideas-flat-vector-modern-illustration_566886-9800.jpg">
+            </div><hr>
+            <div class="column login">
+                <div class="main">
+                    <h2>Student Login</h2>
+                    <form method="post" action="/loginstudentsubmit">
+                        Email:<br>
+                        <input id="e1" type="email" name="email"><br><br>
+                        Password:<br>
+                        <input id="p1" type="password" name="password"><br><br>
+                        <button id="b1" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

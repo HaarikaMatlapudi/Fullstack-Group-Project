@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Faculty Portal</title>
+        <style>
+            .head1{
+                width: 1520px;
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+            }
+            .head{
+                height: 100px;
+                display: flex;
+                gap: 6%;
+                flex-direction: row;
+            }
+            .head2{
+                width: 250px;
+                height: 30px;
+                border-radius: 5px;
+                text-decoration: none;
+                text-align: center;
+                color: #003060;
+                margin-top: 10px;
+                padding: 20px;
+                background-color: rgba(9, 144, 9, 0.825);
+            }
+            .mid{
+                height: 500px;
+                display: flex;
+                gap: 10%;
+                flex-direction: row;
+            }
+            p{
+                width: 55%;
+                height: 50px;
+                text-align: center;
+                color: #003060;
+            }
+            a{
+                text-decoration: none;
+            }
+            .last1{
+                height: 20px;
+                width: 600px;
+            }
+            .mid2{
+                height: 500px;
+                display: flex;
+                gap: 5%;
+                flex-direction: column;
+            }
+            .box{
+                line-height: normal;
+                height: 600px;
+            }
+            a:hover{
+                background-color: rgba(9, 144, 9, 0.825);
+            }
+            a{
+                height: 100px;
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="head">
+                <div class="head1">
+                    <img src="https://cdn.vectorstock.com/i/1000x1000/69/59/university-symbol-vector-2896959.webp">
+                    <h1>APPLE UNIVERSITY</h1>
+                </div>
+                <div class="head2">
+                    <a style="text-decoration: none;font-size: 130%;" href="home.html">Home</a>
+                </div>
+            </div><hr>
+            <h2 style="color: #003060;">Faculty portal</h2>
+            <div class="mid">
+                <div style="width:300px;" class="mid1">
+                    <h3 style="color: #003060;">Yearwise Branches</h3>
+                    <div class="mida">
+                        <a href="#">2021-2025</a><br><br>
+                        <a href="#">2022-2026</a>
+                    </div>
+                </div>
+                <div class="mid2">
+                    <div class="last1">
+                        <label for="name">Name of Student:</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        <button type="submit" name="btn" id="btn" onclick="press()">SUBMIT</button>
+                    </div><br> <br>
+                    <div class="last2">
+                        <div class="box">
+                            <!-- <span>Name: Sree</span><br>
+                            <span>Email: sree@gmail.com</span>
+                            <p>Registartion Number: </p>
+                            <p>Course: B.Tech</p>
+                            <p>Branch: IT</p>
+                            <p>Section: C</p>
+                            <p>Year of Joining: 2022</p>
+                            <p>Year of Graduation: 2026</p>
+                            <h3>Identities</h3>
+                            <p>Phone Number: 234567</p>
+                            <p>Aadhar Number: 209876</p>
+                            <h3>Address</h3>
+                            <p>Door Number: </p>
+                            <p>Street: </p>
+                            <p>District: </p>
+                            <p>State: </p> 
+                            <h1>Welcome <%= studentsData && studentsData.length > 0 ? studentsData[0].fname : ''  %></h1>
+                            <% if (studentsData && studentsData.length > 0) { %>
+                                <div>
+                                    <ul>
+                                        <% studentsData.forEach(function(student) { %>
+                                            <li>
+                                                <strong>Name:</strong> <%= student.fname %> <%= student.mname %> <%= student.lname %><br>
+                                                <strong>Email:</strong> <%= student.mail %><br>
+                                                <strong>Course:</strong> <%= student.course %><br>
+                                                <strong>Branch:</strong> <%= student.branch %><br>
+                                                <strong>section:</strong> <%= student.sec %><br>
+                                                <strong>Year of joining:</strong> <%= student.yearj %><br>
+                                                <strong>Year of Graduation:</strong> <%= student.yearg %><br>
+                                                <strong>Phone Number:</strong> <%= student.phone %><br>
+                                                <strong>Aadhar Number:</strong> <%= student.aadhar %><br>
+                                                <strong>Door Number:</strong> <%= student.door %><br>
+                                                <strong>Street:</strong> <%= student.street %><br>
+                                                <strong>District:</strong> <%= student.district %><br>
+                                                <strong>State:</strong> <%= student.state %><br>
+                                            </li>
+                                        <% }); %>
+                                    </ul>
+                                </div>
+                            <% } %> -->
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            </div>
+        </div>
+        <script>
+            document.getElementById("btn").addEventListener("click",function press(){
+	            //document.write("<span>Name: Sree</span>");
+                box = document.querySelector('.box');
+                box.innerHTML = "<span>Name:Bharath </span><br><span>Email: bharath@gmail.com</span><br><span>Registartion Number: 567</span><br><span>Course: B.Tech</span><br><span>Branch: IT</span><br><span>Section: C</span><br><span>Year of Joining: 2022</span><br><span>Year of Graduation: 2026</span><br><span>Phone Number: 2345678432</span><br><span>Aadhar Number: 209876101579</span><br><span>Door Number:45 </span><br><span>Street: Georege  Street</span><br><span>District: Krishna</span><br> <span>State: Andhra Pradesh </span>";
+            });
+        </script>
+    </body>
+</html>

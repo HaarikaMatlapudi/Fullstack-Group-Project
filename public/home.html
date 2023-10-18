@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOME</title>
+        <style>
+            h1{
+                width: 1200px;
+                height: 60px;
+                color: #003060;
+                margin: 35px;
+                background-color: white;
+            }
+            .fst{
+                width: 1520px;
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .nav{
+                width: 800px;
+                height: 50px;
+                text-align: center;
+                color: #003060;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 20px;
+            }
+            a{
+                height: 50px;
+                width: 150px;
+                text-align: center;
+                text-decoration: none;
+                color: #003060;
+                padding-top: 30px;
+                font-size: 20px; 
+                font-weight: 600;  
+            }
+            a:hover{
+                background-color: rgba(9, 144, 9, 0.825);
+            }
+            div.scroll {
+                background-color: #333;
+                overflow: auto;
+                white-space: nowrap;
+                padding: 10px;
+            }
+            .scroll{
+                width: 1200px;
+                height: 450px;
+                border-radius: 25px;
+            }
+            div.scroll img {
+                padding: 10px;
+            }
+            .mid{
+                width: 1490px;
+                height: 500px;
+                display: flex;
+                gap: 5%;
+                flex-direction: row;
+                border-radius: 25px;
+            }
+            button{
+                height: 50px;
+                width: 120px;
+                border-radius: 25px;
+                color: #003060;
+                background-color: rgba(9, 144, 9, 0.825);
+            }
+            .buttons{
+                height: 500px;
+                width: 300px;
+                margin-left: 200px;
+                margin-top: 100px;
+                color: #003060;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="fst">
+                <img src="https://cdn.vectorstock.com/i/1000x1000/69/59/university-symbol-vector-2896959.webp">
+                <h1> UNIVERSITY</h1>
+                <div class="nav">
+                    <a href="home.html">Home</a>
+                    <a href="register1.html">Faculty Registeration</a>
+                    <a href="register2.html">Student Registration</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div><hr>
+            <h2 style="color: #003060;">Welcome To Your Website...</h2>
+            <div class="mid">
+                <div class="buttons">
+                    <h2>Login to your respective Category.</h2>
+                    <button onclick="login1()" class="btn" type="submit">FACULTY</button>
+                    <br><br><br><br>
+                    <button onclick="login2()"  class="btn" type="submit">STUDENT</button>
+                </div>
+                <div class="scroll">
+                    <img src="https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60" width="600" height="400">
+                    <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60" width="600" height="400">
+                    <img src="https://plus.unsplash.com/premium_photo-1683887034146-c79058dbdcb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60" width="600" height="400">
+                    <img src="https://images.unsplash.com/photo-1477281765962-ef34e8bb0967?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60" width="600" height="400">
+                </div>
+            </div>
+        <script>
+            function login1(){
+                location.replace("login1.html");
+            }
+            function login2(){
+                location.replace("login2.html");
+            }
+        </script>
+    </body>
+</html>

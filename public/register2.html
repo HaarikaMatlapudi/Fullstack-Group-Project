@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STUDENT REGISTRATION FORM</title>
+        <style>
+            h1{
+                width: 1200px;
+                height: 60px;
+                color: #003060;
+                margin-left: 10px;
+                background-color: white;
+            }
+            h2{
+                color: #003060;
+                text-align: center; 
+            }
+            .head1{
+                width: 1520px;
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+            }
+            .head{
+                height: 100px;
+                display: flex;
+                gap: 6%;
+                flex-direction: row;
+            }
+            .head2{
+                width: 250px;
+                height: 30px;
+                border-radius: 5px;
+                text-decoration: none;
+                text-align: center;
+                color: #003060;
+                margin-top: 10px;
+                padding: 20px;
+                background-color: rgba(9, 144, 9, 0.825);
+            }
+            .box1{
+                width: 1400px;
+                height: 800px;
+                margin-left: 35px;
+                padding: 30px 0px 0px 30px;
+                border-radius: 25px;
+                outline: solid 1px darkblue;
+                background-color: #d3d5d6;
+            }
+            label{
+                font-size: 120%; 
+            }
+            input{
+                height: 25px;
+                width: 200px;
+                outline: solid -1px darkblue;
+                border-radius: 5px;
+            }
+            .one{
+                height: 30px;
+                display: flex;
+                flex-direction: row;
+                gap: 10%;
+            }
+            .two{
+                height: 30px;
+                display: flex;
+                flex-direction: row;
+                gap: 10%;
+            }
+            .three{
+                height: 30px;
+                display: flex;
+                flex-direction: row;
+                gap: 10%;
+            }
+            .four{
+                height: 30px;
+                display: flex;
+                flex-direction: row;
+                gap: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="head">
+                <div class="head1">
+                    <img src="https://cdn.vectorstock.com/i/1000x1000/69/59/university-symbol-vector-2896959.webp">
+                    <h1>APPLE UNIVERSITY</h1>
+                </div>
+                <div class="head2">
+                    <a style="text-decoration: none;font-size: 130%;" href="home.html">Home</a>
+                </div>
+            </div>
+            <hr>
+            <div class="register">
+                <h2>STUDENT REGISTRATION FORM</h2>
+                <div class="box1">
+                    <h3>Student Details</h3>
+                    <!--name-->
+                    <form method="post" action="/registerstudentsubmit">
+                        <label for="fname">Full Name:</label><br><br>
+                        <input type="text" id="fname" name="fname" placeholder="Firstname">&nbsp;&nbsp;&nbsp;
+                        <input type="text" id="mname" name="mname" placeholder="Middlename">&nbsp;&nbsp;&nbsp;
+                        <input type="text" id="lname" name="lname" placeholder="Lastname"><br><br><br>
+                        <div class="one">
+                            <div class="one1">
+                                <!--mail-->
+                                <label for="mail">Email</label><br><br>
+                                <input type="email" id="mail" name="mail">
+                            </div>
+                            <div class="one2">
+                                <!--reg-->
+                                <label for="password">Registration number:</label><br><br>
+                                <input type="text" id="password" name="password">
+                            </div>
+                            <div class="one3">
+                                <!--course-->
+                                <label for="course">Course:</label><br><br>
+                                <select name="course" id="course">
+                                    <option value="btech">BTech</option>
+                                    <option value="mca">MCA</option>
+                                    <option value="mba">MBA</option>
+                                    <option value="mtech">MTech</option>
+                                </select>
+                            </div>
+                            <div class="one4">
+                                <!--Branch-->
+                                <label for="branch">Branch:</label><br><br>
+                                <select name="branch" id="branch">
+                                    <option value="cse">CSE</option>
+                                    <option value="it">IT</option>
+                                    <option value="ece">ECE</option>
+                                    <option value="eee">EEE</option>
+                                    <option value="civil">CIVIL</option>
+                                    <option value="mech">MECH</option>
+                                </select>
+                            </div>
+                            <div class="one5">
+                                <!--section-->
+                                <label for="sec">Section:</label><br><br>
+                                <input type="text" id="sec" name="sec">
+                            </div>
+                        </div><br><br><br>
+                        <div class="two">
+                            <div class="two1">
+                                <label for="yearj">Year of Joining:</label><br><br>
+                                <input type="number" id="yearj" name="yearj">
+                            </div>
+                            <div class="two2">
+                                <label for="yearg">Year of Graduation:</label><br><br>
+                                <input type="number" id="yearg" name="yearg">
+                            </div>
+                        </div>
+                        <br><br><br>
+                        <!--Block2-->
+                        <h3>Identities</h3>
+                        <div class="three">
+                            <div class="three1">
+                                <label for="phone">Phone number:</label><br><br>
+                                <input type="number" id="phone" name="phone">
+                            </div>
+                            <div class="three2">
+                                <label for="aadhar">Aadhar number:</label><br><br>
+                                <input type="number" id="aadhar" name="aadhar">
+                            </div>
+                        </div><br><br>
+                        <!--Block3-->
+                        <h3>Address</h3>
+                        <div class="four">
+                            <div class="four1">
+                                <label for="door">Door number:</label><br><br>
+                                <input type="number" id="door" name="door">
+                            </div>
+                            <div class="four2">
+                                <label for="street">Street:</label><br><br>
+                                <input type="text" id="street" name="street">
+                            </div>
+                            <div class="four3">
+                                <label for="district">District:</label><br><br>
+                                <input type="text" id="district" name="district">
+                            </div>
+                            <div class="four4">
+                                <label for="state">State:</label><br><br>
+                                <input type="text" id="state" name="state">
+                            </div>
+                        </div><br><br>
+                        <div class="file">
+                            <h3>Upload Your ID Card:</h3>
+                                <input type="file" id="myFile" name="filename">
+                        </div><br><br>
+                        <center><div class="submit">
+                            <input style="width: 100px;height: 30px;font-size:110%;color:#003060;background-color: rgba(9, 144, 9, 0.825);" type="submit" id="submit" name="submit" >
+                        </div></center>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
